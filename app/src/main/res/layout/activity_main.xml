@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="402dp"
+        android:layout_height="529dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Калькулятор расхода топлива"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="16sp"
+            android:text="Пробег"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextMileage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="16sp"
+            android:ems="10"
+            android:hint="километраж"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="16sp"
+            android:text="Расход топлива"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextFuelConsumption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="16sp"
+            android:ems="10"
+            android:hint="средний расход на 100 км"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="16sp"
+            android:text="Выберите тип топлива"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="366dp"
+            android:layout_height="109dp"
+            android:layout_marginLeft="16sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="16sp">
+
+            <RadioButton
+                android:id="@+id/radioButtonDiesel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Дизель"
+                tools:text="Дизель" />
+
+            <RadioButton
+                android:id="@+id/radioButtonGas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Бензин" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="16sp"
+            android:onClick="onButtonClick"
+            android:text="Рассчитать" />
+
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginRight="16sp"
+            android:text="Результат"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
